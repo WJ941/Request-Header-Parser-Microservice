@@ -27,32 +27,6 @@ app.get("/api/whoami", function (req, res) {
   };
     res.end( JSON.stringify( info_Obj ));
 })
-// app.get("/:str", function( req, res ) {
-//   var date, date_Obj ;
-//   if( isNaN( req.params.str )){
-//     date = new Date( req.params.str );
-//     if( isNaN( date.getTime() ) ){
-//       date_Obj = {
-//       unix: null,
-//       natural: null 
-//     };  
-//     }else{
-//       date_Obj = {
-//         unix: date.getTime(),
-//         natural: date.toUTCString() 
-//       };
-//     }
-//   }else {
-//     date = new Date( parseInt( req.params.str) );
-//     date_Obj = {
-//       unix: date.getTime(),
-//       natural: date.toUTCString() 
-//     };
-//   }
-  
-//   res.send( JSON.stringify( date_Obj ) );
-  
-// })
 
 
 // listen for requests :)
