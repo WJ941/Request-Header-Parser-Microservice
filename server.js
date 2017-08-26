@@ -25,12 +25,7 @@ app.get("/api/whoami", function (req, res) {
     language  : req.headers["accept-language"].split(',')[0],
     software :  userAgent.split(/\s\(|\)\s/g)[1]
   };
-  
-  
-  console.log("software",  userAgent.split(/\s\(|\)\s/g)[1]); 
-  console.log("ipaddress", req.headers["host"]);
-  console.log("language", req.headers["accept-language"].split(',')[0] );
-  res.end( JSON.stringify( info_Obj ));
+    res.end( JSON.stringify( info_Obj ));
 })
 // app.get("/:str", function( req, res ) {
 //   var date, date_Obj ;
